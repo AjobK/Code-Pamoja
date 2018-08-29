@@ -16,7 +16,7 @@
 }
 
 body {
-	background-color: #C9E8FD;
+	background-color: #C9E8AD;
 }
 
 .wrapper {
@@ -36,7 +36,8 @@ body {
 	height: 74px;
 	align-items: center;
 	overflow: hidden;
-	grid-column-start: 2;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
 }
 
 .navigation__logo {
@@ -44,18 +45,11 @@ body {
 	margin-right: auto;
 }
 
-.navigation__link-wrapper {
-	display: inline-grid;
-	grid-gap: 30px;
-}
-
 .navigation__link, .navigation__button {
 	color: #6C6C6C;
 	text-decoration: none;
 	font-size: 16px;
 	font-weight: bold;
-	grid-gap: 10px;
-	white-space: nowrap;
 	text-align: center;
 }
 
@@ -67,7 +61,6 @@ body {
 	transition: 0.2s;
 }
 
-
 .navigation__button:hover {
 	background-color: #32B8FB;
 	color: white;
@@ -76,10 +69,11 @@ body {
 
 .landing {
 	margin-top: 2vh;
-	padding: 12vh 23%;
+	padding: 12vh 0;
 	display: grid;
 	grid-template-rows: auto auto auto;
 	text-align: center;
+	justify-content: center;
 }
 
 .landing__questions {
@@ -102,6 +96,7 @@ body {
 	font-weight: bold;
 	color: rgba(0,0,0,0.6);
 	line-height: 1.4;
+	max-width: 800px;
 }
 
 .content__box-title, .content__box-options__option-title {
@@ -119,12 +114,9 @@ body {
 	margin: 1.6vh auto;
 }
 
-.content__box-title, .content__box-options {
-}
-
 .content__box-options {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 20px;
 	text-align: center;
 }

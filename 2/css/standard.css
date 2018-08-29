@@ -1,7 +1,7 @@
 /*
 	CONTEXT:
 
-	I normally use loads of selectors to be as specific as possible without using a large amount of classes and id's. With this assignment I've tried to go out of my comfort zone and use as few selectors as possible. 
+	I normally use loads of selectors to be as specific as possible without using a large amount of classes and id's. With this assignment I've tried to go out of my comfort zone and use as few selectors as possible.
 
 	That's all! I hope you like my 'MSMD' work :)
 */
@@ -16,7 +16,7 @@
 }
 
 body {
-	background-color: #C9E8FD;
+	background-color: #FFAAAA;
 }
 
 .wrapper {
@@ -75,7 +75,7 @@ body {
 }
 
 .landing {
-	margin-top: 2vh; 
+	margin-top: 2vh;
 	padding: 12vh 23%;
 	display: flex;
 	flex-direction: column;
