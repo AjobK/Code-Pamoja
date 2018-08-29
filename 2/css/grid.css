@@ -30,19 +30,16 @@ body {
 }
 
 .navigation {
-	/* display: grid; */
-	/* grid-template-columns: auto auto auto auto auto auto; */
+	display: grid;
 	box-shadow: 1px 3px 22px -8px rgba(0,0,0,0.2);
 	height: 74px;
 	align-items: center;
-	overflow: hidden;
 	display: grid;
-	grid-template-columns: auto auto auto auto auto auto;
+	grid-template-columns: 30% repeat(4, 1fr) 2fr;
 }
 
 .navigation__logo {
-	transform: scale(1.4);
-	margin-right: auto;
+	/* transform: scale(1.4); */
 }
 
 .navigation__link, .navigation__button {
@@ -111,7 +108,7 @@ body {
 
 .content__box-device, .content__box-scope, .content__box-estimate {
 	width: 80%;
-	margin: 1.6vh auto;
+	margin: 1.6vh auto 4em auto;
 }
 
 .content__box-options {
