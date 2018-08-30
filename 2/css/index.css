@@ -13,7 +13,7 @@
   font-family: 'Quicksand'; }
 
 body {
-  background-color: #FFAAAA; }
+  background-color: #C9E8FD; }
 
 .wrapper {
   margin: 10vh 10vw;
@@ -26,6 +26,7 @@ body {
   .navigation__link-wrapper {
     float: right; }
   .navigation__link, .navigation__button {
+    color: #6C6C6C;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -72,25 +73,44 @@ body {
   margin: 1.6vh auto; }
 
 .content__box-estimate {
-  width: 50%;
+  display: block;
   margin: 0 auto; }
-  .content__box-estimate__form-label {
-    color: rgba(0, 0, 0, 0.6);
-    padding-left: 10px;
-    width: 100%;
-    display: block; }
-  .content__box-estimate__form-input, .content__box-estimate__form-textarea {
-    border: 0;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
-    padding: 5px 0;
-    font-size: 14px;
-    margin-bottom: 30px;
-    margin-top: 5px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
-    background-color: rgba(0, 0, 0, 0);
-    width: 100%; }
-  .content__box-estimate__form-textarea {
-    resize: none; }
+  .content__box-estimate__form {
+    width: 50%;
+    margin: 0 auto; }
+    .content__box-estimate__form-label {
+      color: rgba(0, 0, 0, 0.6);
+      padding-left: 10px;
+      width: 100%;
+      display: block; }
+    .content__box-estimate__form-input, .content__box-estimate__form-textarea {
+      width: 100%;
+      display: block;
+      border: 0;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+      padding: 5px 0;
+      font-size: 14px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0);
+      margin: 5px 0 30px 0; }
+      .content__box-estimate__form-input:focus, .content__box-estimate__form-textarea:focus {
+        color: #32B8FB;
+        border-bottom: 2px solid #32B8FB; }
+    .content__box-estimate__form-textarea {
+      resize: none; }
+    .content__box-estimate__form-submit {
+      display: block;
+      background-color: #32B8FB;
+      border: none;
+      height: 3em;
+      width: 100%;
+      max-width: 15em;
+      font-size: 0.85em;
+      color: white;
+      border-radius: 2em;
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      margin: 0 auto 8vh auto; }
 
 .content__box-title {
   color: #32B8FB;
@@ -104,13 +124,20 @@ body {
   cursor: pointer;
   padding: 2vw;
   border-radius: 8px;
-  box-shadow: 0px 0px 20px -4px #32b8fb61;
+  box-shadow: 0px 0px 20px -4px #32B8FB;
   margin: 20px;
   width: calc(25% - (2vw*2 + 22px*2)); }
+  @media only screen and (max-width: 1050px) {
+    .content__box-options__option {
+      width: calc(50% - (2vw*2 + 22px*2)); } }
+  @media only screen and (max-width: 600px) {
+    .content__box-options__option {
+      width: calc(100% - (2vw*2 + 20px*2)); } }
   .content__box-options__option-title {
     color: #32B8FB;
     text-transform: uppercase;
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: center; }
   .content__box-options__option-checkbox {
     position: absolute;
     top: 20px;
@@ -120,47 +147,19 @@ body {
     width: 18px;
     border-radius: 3px; }
   .content__box-options__option-image {
+    display: block;
     padding: 3vw 0;
     margin: 0 auto; }
-
-@media only screen and (max-width: 1050px) {
-  .content__box-options__option {
-    width: calc(50% - (2vw*2 + 22px*2)); } }
-
-@media only screen and (max-width: 600px) {
-  .content__box-options__option {
-    width: calc(100% - (2vw*2 + 20px*2)); } }
-
-.content__box_estimate__form-textarea {
-  resize: none; }
-
-.content__box-estimate__form-input:focus,
-.content__box_estimate__form-textarea:focus {
-  color: #32B8FB;
-  border-bottom: 2px solid #32B8FB; }
-
-.content__box-estimate__form-submit {
-  display: block;
-  background-color: #32B8FB;
-  border: none;
-  height: 3em;
-  width: 100%;
-  max-width: 15em;
-  font-size: 0.85em;
-  color: white;
-  border-radius: 2em;
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  margin: 0 auto 8vh auto; }
 
 .footer {
   background-color: #FAFAFA;
   height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 25%; }
+  padding: 0 25%;
+  font-size: 0; }
   .footer__logo {
-    height: 18px; }
+    display: inline-block;
+    height: 18px;
+    width: calc(100% / 5);
+    padding: calc((48px - 18px) / 2) 0; }
 
 /*# sourceMappingURL=index.css.map */
