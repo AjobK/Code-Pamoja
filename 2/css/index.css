@@ -1,0 +1,165 @@
+/*
+	CONTEXT:
+
+	I normally use loads of selectors to be as specific as possible without using a large amount of classes and id's. With this assignment I've tried to go out of my comfort zone and use as few selectors as possible.
+
+	That's all! I hope you like my 'MSMD' work :)
+*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Quicksand'; }
+
+body {
+  background-color: #C9E8FD; }
+
+.wrapper {
+  margin: 10vh 10vw;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.2); }
+
+.navigation {
+  box-shadow: 1px 3px 22px -8px rgba(0, 0, 0, 0.2);
+  padding: 29px 15%; }
+  .navigation__link-wrapper {
+    float: right; }
+  .navigation__link, .navigation__button {
+    color: #6C6C6C;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px;
+    white-space: nowrap; }
+  .navigation__button {
+    color: #32B8FB;
+    padding: 8px 25px;
+    border: 2px solid #32B8FB;
+    border-radius: 22px;
+    transition: 0.2s; }
+    .navigation__button:hover {
+      background-color: #32B8FB;
+      color: white;
+      transition: 0.2s; }
+  .navigation__logo {
+    transform: scale(1.4); }
+
+.footer {
+  padding: 0 15%; }
+
+.landing {
+  margin-top: 2vh;
+  padding: 12vh 23%;
+  text-align: center; }
+  .landing__questions {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    word-spacing: 4px; }
+  .landing__title {
+    color: #32B8FB;
+    font-size: 3em;
+    padding-bottom: 10px; }
+  .landing__intro {
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.4; }
+
+.content__box-device, .content__box-scope, .content__box-estimate {
+  width: 80%;
+  margin: 1.6vh auto; }
+
+.content__box-estimate {
+  display: block;
+  margin: 0 auto; }
+  .content__box-estimate__form {
+    width: 50%;
+    margin: 0 auto; }
+    .content__box-estimate__form-label {
+      color: rgba(0, 0, 0, 0.6);
+      padding-left: 10px;
+      width: 100%;
+      display: block; }
+    .content__box-estimate__form-input, .content__box-estimate__form-textarea {
+      width: 100%;
+      display: block;
+      border: 0;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+      padding: 5px 0;
+      font-size: 14px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0);
+      margin: 5px 0 30px 0; }
+      .content__box-estimate__form-input:focus, .content__box-estimate__form-textarea:focus {
+        color: #32B8FB;
+        border-bottom: 2px solid #32B8FB; }
+    .content__box-estimate__form-textarea {
+      resize: none; }
+    .content__box-estimate__form-submit {
+      display: block;
+      background-color: #32B8FB;
+      border: none;
+      height: 3em;
+      width: 100%;
+      max-width: 15em;
+      font-size: 0.85em;
+      color: white;
+      border-radius: 2em;
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      margin: 0 auto 8vh auto; }
+
+.content__box-title {
+  color: #32B8FB;
+  font-size: 1.6em;
+  text-align: center;
+  margin: 2em 0 1em 0; }
+
+.content__box-options__option {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 2vw;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px -4px #32B8FB;
+  margin: 20px;
+  width: calc(25% - (2vw*2 + 22px*2)); }
+  @media only screen and (max-width: 1050px) {
+    .content__box-options__option {
+      width: calc(50% - (2vw*2 + 22px*2)); } }
+  @media only screen and (max-width: 600px) {
+    .content__box-options__option {
+      width: calc(100% - (2vw*2 + 20px*2)); } }
+  .content__box-options__option-title {
+    color: #32B8FB;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center; }
+  .content__box-options__option-checkbox {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 1px solid #32B8FB;
+    height: 18px;
+    width: 18px;
+    border-radius: 3px; }
+  .content__box-options__option-image {
+    display: block;
+    padding: 3vw 0;
+    margin: 0 auto; }
+
+.footer {
+  background-color: #FAFAFA;
+  height: 48px;
+  padding: 0 25%;
+  font-size: 0; }
+  .footer__logo {
+    display: inline-block;
+    height: 18px;
+    width: calc(100% / 5);
+    padding: calc((48px - 18px) / 2) 0; }
+
+/*# sourceMappingURL=index.css.map */

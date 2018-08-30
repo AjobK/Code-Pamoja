@@ -1,0 +1,27 @@
+{
+  "name": "code-pamoja",
+  "version": "1.0.0",
+  "description": "Competa IT internship",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.1",
+    "sass": "^1.13.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjobK/Code-Pamoja.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AjobK/Code-Pamoja/issues"
+  },
+  "homepage": "https://github.com/AjobK/Code-Pamoja#readme"
+}

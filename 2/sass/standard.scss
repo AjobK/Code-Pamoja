@@ -1,0 +1,198 @@
+/*
+	CONTEXT:
+
+	I normally use loads of selectors to be as specific as possible without using a large amount of classes and id's. With this assignment I've tried to go out of my comfort zone and use as few selectors as possible.
+
+	That's all! I hope you like my 'MSMD' work :)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700');
+
+$primary: #32B8FB;
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-family: 'Quicksand';
+}
+
+body {
+	background-color: #C9E8FD;
+}
+
+.wrapper {
+	margin: 10vh 10vw;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.2);
+}
+
+.navigation {
+	box-shadow: 1px 3px 22px -8px rgba(0,0,0,0.2);
+	padding: 29px 15%;
+	&__link-wrapper {
+		float: right;
+	}
+	&__link, &__button {
+		color: #6C6C6C;
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 0 10px;
+		white-space: nowrap;
+	}
+	&__button {
+		color: $primary;
+		padding: 8px 25px;
+		border: 2px solid $primary;
+		border-radius: 22px;
+		transition: 0.2s;
+		&:hover {
+			background-color: $primary;
+			color: white;
+			transition: 0.2s;
+		}
+	}
+	&__logo {
+		transform: scale(1.4);
+	}
+}
+
+.footer {
+	padding: 0 15%;
+}
+
+.landing {
+	margin-top: 2vh;
+	padding: 12vh 23%;
+	text-align: center;
+	&__questions {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(0,0,0,0.5);
+		word-spacing: 4px;
+	}
+	&__title {
+		color: $primary;
+		font-size: 3em;
+		padding-bottom: 10px;
+	}
+	&__intro {
+		text-align: center;
+		font-weight: bold;
+		color: rgba(0,0,0,0.6);
+		line-height: 1.4;
+	}
+}
+
+.content__box {
+	&-device, &-scope, &-estimate {
+		width: 80%;
+		margin: 1.6vh auto;
+	}
+	&-estimate {
+		display: block;
+		margin: 0 auto;
+		&__form {
+			width: 50%;
+			margin: 0 auto;
+			&-label {
+				color: rgba(0,0,0,0.6);
+				padding-left: 10px;
+				width: 100%;
+				display: block;
+			}
+			&-input, &-textarea {
+				width: 100%;
+				display: block;
+				border: 0;
+				border-bottom: 2px solid rgba(0,0,0,0.6);
+				padding: 5px 0;
+				font-size: 14px;
+				border-bottom: 2px solid rgba(0,0,0,0.6);
+				background-color: rgba(0,0,0,0);
+				margin: 5px 0 30px 0;
+				&:focus {
+					color: $primary;
+					border-bottom: 2px solid $primary;
+				}
+			}
+			&-textarea {
+				resize: none;
+			}
+			&-submit {
+				display: block;
+				background-color: $primary;
+				border: none;
+				height: 3em;
+				width: 100%;
+				max-width: 15em;
+				font-size: 0.85em;
+				color: white;
+				border-radius: 2em;
+				box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+				cursor: pointer;
+				margin: 0 auto 8vh auto;
+			}
+		}
+	}
+	&-title {
+		color: $primary;
+		font-size: 1.6em;
+		text-align: center;
+		margin: 2em 0 1em 0;
+	}
+	&-options {
+		&__option {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+			padding: 2vw;
+			border-radius: 8px;
+			box-shadow: 0px 0px 20px -4px $primary;
+			margin: 20px;
+			width: calc(25% - (2vw*2 + 22px*2));
+			@media only screen and (max-width: 1050px) {
+				width: calc(50% - (2vw*2 + 22px*2));
+			}
+
+			@media only screen and (max-width: 600px) {
+				width: calc(100% - (2vw*2 + 20px*2));
+			}
+			&-title {
+				color: $primary;
+				text-transform: uppercase;
+				font-size: 16px;
+				text-align: center;
+			}
+			&-checkbox {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				border: 1px solid $primary;
+				height: 18px;
+				width: 18px;
+				border-radius: 3px;
+			}
+			&-image {
+				display: block;
+				padding: 3vw 0;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+.footer {
+	background-color: #FAFAFA;
+	height: 48px;
+	padding: 0 25%;
+	font-size: 0; // Removes spacing
+	&__logo {
+		display: inline-block;
+		height: 18px;
+		width: calc(100% / 5);
+		padding: calc((48px - 18px) / 2) 0;
+	}
+}
